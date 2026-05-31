@@ -2,7 +2,7 @@ import express from "express";
 import dotenv from "dotenv"
 import cors from "cors";
 import cookieParser from "cookie-parser";
-import path from "path"
+import path from "path";
 
 import { connectDB } from "./config/db.js";
 import authRoutes from "./routes/auth.route.js";
@@ -15,7 +15,6 @@ import paymentRoutes from "./routes/payment.route.js";
 import adminRoutes from "./routes/admin.route.js";
 
 dotenv.config();
-
 
 const app = express();
 const PORT = process.env.PORT || 5000;

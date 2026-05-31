@@ -26,7 +26,6 @@ const App = () => {
     getMe();
   }, [getMe]);
 
-
   // show spinner while checking auth
   // this prevents the login page from flashing before redirect
   if (checkingAuth) return <LoadingSpinner />;
